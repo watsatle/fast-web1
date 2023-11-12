@@ -3,7 +3,48 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-<div className="hero min-h-screen" style={{backgroundImage: 'url(https://wallpapers.com/images/hd/abstract-background-6m6cjbifu3zpfv84.jpg)'}}>
+
+<div className="navbar bg-base-100">
+  <div className="navbar-start">
+    <div className="dropdown">
+      <label tabIndex={0} className="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+      </label>
+      <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+        <li><a>Item 1</a></li>
+        <li>
+          <a>Parent</a>
+          <ul className="p-2">
+            <li><a>Submenu 1</a></li>
+            <li><a>Submenu 2</a></li>
+          </ul>
+        </li>
+        <li><a>Item 3</a></li>
+      </ul>
+    </div>
+    <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+  </div>
+  <div className="navbar-center hidden lg:flex">
+    <ul className="menu menu-horizontal px-1">
+      <li><a>Item 1</a></li>
+      <li tabIndex={0}>
+        <details>
+          <summary>Parent</summary>
+          <ul className="p-2">
+            <li><a>Submenu 1</a></li>
+            <li><a>Submenu 2</a></li>
+          </ul>
+        </details>
+      </li>
+      <li><a>Item 3</a></li>
+    </ul>
+  </div>
+  <div className="navbar-end">
+    <a className="btn">Button</a>
+  </div>
+</div>
+
+<div className="hero min-h-screen" style={{backgroundImage: 'url(https://d150u0abw3r906.cloudfront.net/wp-content/uploads/2021/10/image2-2-1024x649.png)'}}>
   <div className="hero-overlay bg-opacity-60"></div>
   <div className="hero-content text-center text-neutral-content">
     <div className="max-w-md">
@@ -13,168 +54,29 @@ export default function Home() {
     </div>
   </div>
 </div>
-<div className="overflow-x-auto h-96">
-  <table className="table table-pin-rows">
-  <thead>
-    <tr>
-      <th>A</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>Ant-Man</td></tr>
-    <tr><td>Aquaman</td></tr>
-    <tr><td>Asterix</td></tr>
-    <tr><td>The Atom</td></tr>
-    <tr><td>The Avengers</td></tr>
-  </tbody>
-  <thead>
-    <tr>
-      <th>B</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>Batgirl</td></tr>
-    <tr><td>Batman</td></tr>
-    <tr><td>Batwoman</td></tr>
-    <tr><td>Black Canary</td></tr>
-    <tr><td>Black Panther</td></tr>
-  </tbody>
-  <thead>
-    <tr>
-      <th>C</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>Captain America</td></tr>
-    <tr><td>Captain Marvel</td></tr>
-    <tr><td>Catwoman</td></tr>
-    <tr><td>Conan the Barbarian</td></tr>
-  </tbody>
-  <thead>
-    <tr>
-      <th>D</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>Daredevil</td></tr>
-    <tr><td>The Defenders</td></tr>
-    <tr><td>Doc Savage</td></tr>
-    <tr><td>Doctor Strange</td></tr>
-  </tbody>
-  <thead>
-    <tr>
-      <th>E</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>Elektra</td></tr>
-  </tbody>
-  <thead>
-    <tr>
-      <th>F</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>Fantastic Four</td></tr>
-  </tbody>
-  <thead>
-    <tr>
-      <th>G</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>Ghost Rider</td></tr>
-    <tr><td>Green Arrow</td></tr>
-    <tr><td>Green Lantern</td></tr>
-    <tr><td>Guardians of the Galaxy</td></tr>
-  </tbody>
-  <thead>
-    <tr>
-      <th>H</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>Hawkeye</td></tr>
-    <tr><td>Hellboy</td></tr>
-    <tr><td>Incredible Hulk</td></tr>
-  </tbody>
-  <thead>
-    <tr>
-      <th>I</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>Iron Fist</td></tr>
-    <tr><td>Iron Man</td></tr>
-  </tbody>
-  <thead>
-    <tr>
-      <th>M</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>Marvelman</td></tr>
-  </tbody>
-  <thead>
-    <tr>
-      <th>R</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>Robin</td></tr>
-    <tr><td>The Rocketeer</td></tr>
-  </tbody>
-  <thead>
-    <tr>
-      <th>S</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>The Shadow</td></tr>
-    <tr><td>Spider-Man</td></tr>
-    <tr><td>Sub-Mariner</td></tr>
-    <tr><td>Supergirl</td></tr>
-    <tr><td>Superman</td></tr>
-  </tbody>
-  <thead>
-    <tr>
-      <th>T</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>Teenage Mutant Ninja Turtles</td></tr>
-    <tr><td>Thor</td></tr>
-  </tbody>
-  <thead>
-    <tr>
-      <th>W</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>The Wasp</td></tr>
-    <tr><td>Watchmen</td></tr>
-    <tr><td>Wolverine</td></tr>
-    <tr><td>Wonder Woman</td></tr>
-  </tbody>
-  <thead>
-    <tr>
-      <th>X</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>X-Men</td></tr>
-  </tbody>
-  <thead>
-    <tr>
-      <th>Z</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>Zatanna</td></tr>
-    <tr><td>Zatara</td></tr>
-  </tbody>
-  </table>
+
+<div className="hero min-h-screen" style={{backgroundImage: 'url(https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg?cs=srgb&dl=pexels-pixabay-147411.jpg&fm=jpg)'}}>
+  <div className="hero-overlay bg-opacity-60"></div>
+  <div className="hero-content text-center text-neutral-content">
+    <div className="max-w-md">
+      <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
+      <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+      <button className="btn btn-primary">Get Started</button>
+    </div>
+  </div>
 </div>
+
+<div className="hero min-h-screen" style={{backgroundImage: 'url(https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/blogs/18725/images/DAau3fjETFmAjLVaNl3B_FallLandscape7-.jpg)'}}>
+  <div className="hero-overlay bg-opacity-60"></div>
+  <div className="hero-content text-center text-neutral-content">
+    <div className="max-w-md">
+      <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
+      <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+      <button className="btn btn-primary">Get Started</button>
+    </div>
+  </div>
+</div>
+
 
     <footer className="footer p-10 bg-neutral text-neutral-content">
   <nav>
