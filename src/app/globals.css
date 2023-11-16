@@ -25,3 +25,7 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+navbar bg-base-100 {
+  position: sticky;
+}
